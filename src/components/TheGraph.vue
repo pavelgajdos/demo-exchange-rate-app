@@ -83,7 +83,7 @@ export default {
     },
     methods: {
         retrieveRates() {
-            ExchangeRateAPIService.getDailyTimerSeries("CZK")
+            ExchangeRateAPIService.getDailyTimeSeries("CZK")
                 .then((response) => {
 
                     const dataset = transformData(response);
